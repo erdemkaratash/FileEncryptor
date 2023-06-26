@@ -4,7 +4,7 @@ FolderEncryptor-NoFileNameEncryption.py is less risky but provides less privacy.
 
 # Folder/File Encryption and Decryption Tool
 
-This Python script uses the AES encryption standard to encrypt and decrypt the contents of files within a specified folder, namely a folder named 'Private' in the same directory as the script. The program also works with any subfolders within the 'Private' folder. It features a simple graphical user interface (GUI) created using the Tkinter library. 
+This Python script uses the AES encryption standard to encrypt and decrypt the contents of files within a specified folder, specifically the folder that script is located. The program also works with any subfolders within this folder. It features a simple graphical user interface (GUI) created using the Tkinter library. 
 
 ## How to Use
 
