@@ -39,14 +39,16 @@ def decrypt_file(file_path, key):
 def encrypt_folder(folder_path, key):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
-            file_path = os.path.join(root, file)
-            encrypt_file(file_path, key)
+            if file != os.path.basename(__file__):
+                file_path = os.path.join(root, file)
+                encrypt_file(file_path, key)
 
 def decrypt_folder(folder_path, key):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
-            file_path = os.path.join(root, file)
-            decrypt_file(file_path, key)
+            if file != os.path.basename(__file__):
+                file_path = os.path.join(root, file)
+                decrypt_file(file_path, key)
 
 def run_operation():
     password = password_entry.get()
@@ -64,7 +66,7 @@ def run_operation():
         decrypt_folder(folder_path, key)
         messagebox.showinfo("Success", "Folder decrypted")
 
-folder_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "Private")
+folder_path = os.path.dirname(os.path.realpath(__file__))
 
 root = tk.Tk()
 
