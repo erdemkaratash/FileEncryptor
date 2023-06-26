@@ -8,6 +8,7 @@ This Python script uses the AES encryption standard to encrypt and decrypt the c
 
 ## How to Use
 
+0. Put the script into the directory that you want to encrypt/decrypt. (Partial decryption of an encrypted file is possible this way.)
 1. Run the Python script.
 2. A GUI window will open. You will see two radio buttons labeled 'Encrypt' and 'Decrypt', a field to enter your password, and a 'Run' button.
 3. Select either 'Encrypt' or 'Decrypt'.
