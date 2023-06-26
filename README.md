@@ -1,7 +1,6 @@
 # !!! USE AT YOUR OWN RISK !!!
-## PLEASE READ BELOW CAREFULLY FOR MORE INFORMATION
 
-### FolderEncryptor-NoFileNameEncryption.py is less risky but provides less privacy.
+FolderEncryptor-NoFileNameEncryption.py is less risky but provides less privacy. The documentation below is for FolderEncryptor.py
 
 # Folder/File Encryption and Decryption Tool
 
